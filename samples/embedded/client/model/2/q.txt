@@ -1,0 +1,11 @@
+name: Input_int8
+type: int8[1,56,56,3]
+quantization: 0.003921568859368563 * (q + 128)
+location: 0
+Identity_int8
+name: Identity_int8
+type: int8[1,7,7,18]
+quantization: 0.14218327403068542 * (q + 15)
+location: 100
+
+anchors = 9, 14,  12, 17,  22, 21
