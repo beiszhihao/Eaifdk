@@ -57,7 +57,7 @@ This project can only be built on Unix-like systems, such as ubuntu, Centos, and
 
 ## Preparation
 The system kit you need to install: </br>
-See [package.txt](https://github.com/beiszhihao/Eaifdk/blob/master/script/package.txtt) </br> </br>
+See [package.txt](https://github.com/beiszhihao/Eaifdk/blob/master/script/package.txt) </br> </br>
 After the installation of the system kit, you need to install Python dependencies. Use the following command to automatically complete the installation:
 ```bash
 pip3 install -r script/requirements.txt
