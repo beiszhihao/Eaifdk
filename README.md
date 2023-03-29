@@ -51,7 +51,7 @@ Embedded AI FDK aims to build target recognition AI solutions for embedded and s
 ![emm](https://user-images.githubusercontent.com/38308279/216880366-cc82fe45-b638-4b0d-b9e5-706ae07756fe.jpg)
 
 ## Multiple people
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/38308279/228415156-adfc9a71-60e3-436e-9594-e513ad7cf5c8.jpg">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/38308279/228415749-f14bf38b-b955-4d5e-936c-da33d341a5c4.jpg">
 
 ## Introduction
 This project is mainly an AI ```object recognition``` solution developed for embedded and single-chip devices. You can use this framework to easily train neural network models that can be applied to embedded chips.
