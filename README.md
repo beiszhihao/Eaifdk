@@ -1,13 +1,45 @@
 # Embedded AI Framework Development Kit
+<div align="center">
+    
+![ico](https://user-images.githubusercontent.com/38308279/216873658-bf8235fa-cb24-4b0b-8ed2-35ed573fd148.png)
+    
 ![Embedded-AI-FDK](https://img.shields.io/github/languages/top/beiszhihao/Eaifdk)
 ![Embedded-AI-FDK](https://img.shields.io/github/languages/code-size/beiszhihao/Eaifdk)
 ![Embedded-AI-FDK](https://img.shields.io/github/stars/beiszhihao/Eaifdk?style=social)
 ![Embedded-AI-FDK](https://img.shields.io/github/forks/beiszhihao/Eaifdk?style=social)
 ![Embedded-AI-FDK](https://img.shields.io/github/watchers/beiszhihao/Eaifdk?style=social)
+    
+</div>
 
-![ico](https://user-images.githubusercontent.com/38308279/216873658-bf8235fa-cb24-4b0b-8ed2-35ed573fd148.png)
+## Contents:
+- [What is Embedded AI FDK?](#what-is-embedded-ai-fdk)
+- [Embedded](#embedded)
+- [Singlechip](#singlechip)
+- [Introduction](#introduction)
+- [Embedded computing efficiency (Tensor Flow Lite)](#embedded-computing-efficiency-tensor-flow-lite)
+  - [Hardware Environment](#hardware-environment)
+  - [Operational curve](#operational-curve)
+- [Single-chip computer calculation (cmsis-nn)](#single-chip-computer-calculation-cmsis-nn)
+  - [Hardware Environment](#hardware-environment)
+  - [Operational curve](#operational-curve)
+- [Project example](#project-example)
+- [Build this project](#build-this-project)
+- [Use it](#use-it)
+- [Build samples](#build-samples)
+  - [Build embedded projects](#build-embedded-projects)
+  - [Build singlechip projects](#build-singlechip-projects)
+- [Data set](#data-set)
+- [Train](#train)
+- [Build model](#build-model)
+- [View](#view)
+- [Test](#test)
+- [Contributor](#contributor)
+- [Feedback](#feedback)
+- [License](#license)
+- [Thanks](#thanks)
 
-## About
+
+## What is Embedded AI FDK?
 Embedded AI FDK aims to build target recognition AI solutions for embedded and single-chip devices. We advocate simplification, so that you can build AI programs without AI development experience. You just need to focus on your field and leave the rest to the embedded AI FDK. In addition to simplification, there is also a built-in training framework and reasoning framework. Of course, if we want to use these functions, we need some AI development experience. In order to simplify, we have encapsulated them. Developers only need to know some AI professional languages to use
 
 ## Embedded
@@ -31,8 +63,8 @@ System: Ubuntu 20.04 </br>
 Unit: ms, stable at 7 ms </br>
 <img width="460" alt="image" src="https://user-images.githubusercontent.com/38308279/217720175-c164252f-4286-472d-8bd0-ddb50f80a406.png">
 
-### Single-chip computer calculation (cmsis-nn)
-### Hardware Environment: </br>
+## Single-chip computer calculation (cmsis-nn)
+### Hardware Environment
 Chip: stm32f746ngh6u (stm32f746g_disco) </br>
 Bit: 32 </br>
 Frequency: 216 MHz </br>
