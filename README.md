@@ -15,6 +15,7 @@
 - [What is Embedded AI FDK?](#what-is-embedded-ai-fdk)
 - [Embedded](#embedded)
 - [Singlechip](#singlechip)
+- [Multiple people](#multiple-people)
 - [Introduction](#introduction)
 - [Embedded computing efficiency (Tensor Flow Lite)](#embedded-computing-efficiency-tensor-flow-lite)
   - [Hardware Environment](#hardware-environment)
@@ -23,6 +24,7 @@
   - [Hardware Environment](#hardware-environment)
   - [Operational curve](#operational-curve)
 - [Project example](#project-example)
+- [Flow path](#flow-path)
 - [Build this project](#build-this-project)
 - [Use it](#use-it)
 - [Build samples](#build-samples)
@@ -47,6 +49,9 @@ Embedded AI FDK aims to build target recognition AI solutions for embedded and s
 
 ## Singlechip
 ![emm](https://user-images.githubusercontent.com/38308279/216880366-cc82fe45-b638-4b0d-b9e5-706ae07756fe.jpg)
+
+## Multiple people
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/38308279/228415156-adfc9a71-60e3-436e-9594-e513ad7cf5c8.jpg">
 
 ## Introduction
 This project is mainly an AI ```object recognition``` solution developed for embedded and single-chip devices. You can use this framework to easily train neural network models that can be applied to embedded chips.
@@ -93,6 +98,15 @@ See [package.txt](https://github.com/beiszhihao/Eaifdk/blob/master/script/packag
 After the installation of the system kit, you need to install Python dependencies. Use the following command to automatically complete the installation:
 ```bash
 pip3 install -r script/requirements.txt
+```
+
+## Flow path
+```mermaid
+flowchart TD
+    A[Train Model] -->|Export Model| B(Migrate to machine)
+    B --> C{Inference Model}
+    C -->|One| D[Weight]
+    C -->|Two| E[Box]
 ```
 
 ## Build this project
