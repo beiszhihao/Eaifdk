@@ -24,8 +24,13 @@
   - [Hardware Environment](#hardware-environment)
   - [Operational curve](#operational-curve)
 - [Project example](#project-example)
+  - [Object recognition](#object-recognition)
+  - [Eye tracking](#eye-tracking)
+  - [Unmanned vehicle](#unmanned-vehicle)
 - [Flow path](#flow-path)
+- [Environment](#environment)
 - [Build this project](#build-this-project)
+- [Preparation](#preparation)
 - [Use it](#use-it)
 - [Build samples](#build-samples)
   - [Build embedded projects](#build-embedded-projects)
@@ -39,7 +44,6 @@
 - [Feedback](#feedback)
 - [License](#license)
 - [Thanks](#thanks)
-
 
 ## What is Embedded AI FDK?
 Embedded AI FDK aims to build target recognition AI solutions for embedded and single-chip devices. We advocate simplification, so that you can build AI programs without AI development experience. You just need to focus on your field and leave the rest to the embedded AI FDK. In addition to simplification, there is also a built-in training framework and reasoning framework. Of course, if we want to use these functions, we need some AI development experience. In order to simplify, we have encapsulated them. Developers only need to know some AI professional languages to use
@@ -89,6 +93,15 @@ Unit: ms, stable at 20 ms </br>
 ### Unmanned vehicle
 <img width="267" alt="image" src="https://user-images.githubusercontent.com/38308279/217718030-1624fcde-ebe7-431f-99f0-125ada4cb783.png">
 
+## Flow path
+```mermaid
+flowchart TD
+    A[Train Model] -->|Export Model| B(Migrate to machine)
+    B --> C{Inference Model}
+    C -->|One| D[Weight]
+    C -->|Two| E[Box]
+```
+
 ## Environment
 This project can only be built on Unix-like systems, such as ubuntu, Centos, and Debian OS
 
@@ -98,15 +111,6 @@ See [package.txt](https://github.com/beiszhihao/Eaifdk/blob/master/script/packag
 After the installation of the system kit, you need to install Python dependencies. Use the following command to automatically complete the installation:
 ```bash
 pip3 install -r script/requirements.txt
-```
-
-## Flow path
-```mermaid
-flowchart TD
-    A[Train Model] -->|Export Model| B(Migrate to machine)
-    B --> C{Inference Model}
-    C -->|One| D[Weight]
-    C -->|Two| E[Box]
 ```
 
 ## Build this project
